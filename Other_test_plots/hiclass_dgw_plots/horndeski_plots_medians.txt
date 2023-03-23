@@ -1,0 +1,13 @@
+#parameter mean std_dev
+#./emcee_output/hiclass_dgw.txt
+cosmological_parameters--omega_m   3.125855e-01   8.300310e-03
+cosmological_parameters--h0   6.768999e-01   6.032570e-03
+cosmological_parameters--omega_b   4.857320e-02   6.772897e-04
+cosmological_parameters--n_s   9.632745e-01   4.465143e-03
+cosmological_parameters--a_s   2.124800e-09   6.848561e-11
+cosmological_parameters--tau   6.036815e-02   1.573117e-02
+horndeski_parameters--parameters_smg__2   6.209800e-01   5.576715e-01
+horndeski_parameters--parameters_smg__3   1.066775e-01   5.629834e-01
+cosmological_parameters--sigma_8   8.471536e-01   1.508293e-02
+prior   2.361427e+01   3.552714e-15
+post   -2.619801e+02   2.035750e+00
