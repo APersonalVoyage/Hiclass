@@ -1,0 +1,2 @@
+#d_gw_obs, z_obs, sigma_dgw, sigma_z, v_rms
+5.3	0.82	11	0.0001	 500
