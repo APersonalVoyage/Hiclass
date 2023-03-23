@@ -1,0 +1,13 @@
+#parameter mean std_dev
+#./emcee_output/hiclass_horndeski.txt
+cosmological_parameters--omega_m   3.099518e-01   7.928860e-03
+cosmological_parameters--h0   6.789641e-01   5.850957e-03
+cosmological_parameters--omega_b   4.838218e-02   6.563325e-04
+cosmological_parameters--n_s   9.643803e-01   4.625019e-03
+cosmological_parameters--a_s   2.117264e-09   5.333054e-11
+cosmological_parameters--tau   5.965568e-02   1.264530e-02
+horndeski_parameters--parameters_smg__2   6.475659e-01   4.356375e-01
+horndeski_parameters--parameters_smg__3   7.720841e-02   4.532446e-01
+cosmological_parameters--sigma_8   8.425404e-01   1.415534e-02
+prior   2.361427e+01   7.105427e-15
+post   -2.617302e+02   2.112765e+00

@@ -1,0 +1,13 @@
+#parameter upper95
+#./emcee_output/hiclass_horndeski.txt
+cosmological_parameters--omega_m     0.324544
+cosmological_parameters--h0     0.688028
+cosmological_parameters--omega_b     0.0495674
+cosmological_parameters--n_s     0.971962
+cosmological_parameters--a_s     2.22288e-09
+cosmological_parameters--tau     0.0844179
+horndeski_parameters--parameters_smg__2     1.46877
+horndeski_parameters--parameters_smg__3     0.994716
+cosmological_parameters--sigma_8     0.870501
+prior     23.6143
+post     -259.346
