@@ -1,7 +1,0 @@
-#You should cite these papers in any publication based on this pipeline.
-#./emcee_output/hiclass_dgw.txt
-http://arxiv.org/abs/1303.4486
-MNRAS 441, 3524 (2014)
-fsigma8 MMNRAS 423, 3430 3444 (2012)
-A. Ross et al, MNRAS 449 (2015)
-BAO MNRAS 416, 3017 3032 (2011)
