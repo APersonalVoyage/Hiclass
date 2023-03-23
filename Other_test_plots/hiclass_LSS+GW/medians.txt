@@ -1,0 +1,37 @@
+#parameter mean std_dev
+#emcee_output/hiclass_horndeski.txt
+cosmological_parameters--omega_m   3.057552e-01   8.011771e-03
+cosmological_parameters--h0   6.818554e-01   5.840250e-03
+cosmological_parameters--omega_b   4.803976e-02   6.750341e-04
+cosmological_parameters--n_s   9.663288e-01   4.415223e-03
+cosmological_parameters--a_s   2.104102e-09   4.385983e-11
+cosmological_parameters--tau   5.760840e-02   1.018750e-02
+horndeski_parameters--parameters_smg__2   4.824930e-01   3.672997e-01
+horndeski_parameters--parameters_smg__3   4.006006e-02   3.752661e-01
+cosmological_parameters--sigma_8   8.350205e-01   1.421682e-02
+prior   2.361427e+01   7.105427e-15
+post   -2.626610e+02   2.537816e+00
+#emcee_output/gw170817.txt
+cosmological_parameters--omega_m   3.114489e-01   8.149599e-03
+cosmological_parameters--h0   6.779814e-01   5.989498e-03
+cosmological_parameters--omega_b   4.852588e-02   6.692643e-04
+cosmological_parameters--n_s   9.639128e-01   4.488512e-03
+cosmological_parameters--a_s   2.116361e-09   7.034131e-11
+cosmological_parameters--tau   5.862344e-02   1.612185e-02
+horndeski_parameters--parameters_smg__2   5.972808e-01   5.257122e-01
+horndeski_parameters--parameters_smg__3   1.068294e-02   5.224636e-01
+cosmological_parameters--sigma_8   8.442446e-01   1.604602e-02
+prior   2.361427e+01   7.105427e-15
+post   -2.615527e+02   2.239812e+00
+#emcee_output/hiclass_dgw.txt
+cosmological_parameters--omega_m   3.096904e-01   8.874123e-03
+cosmological_parameters--h0   6.789620e-01   6.424632e-03
+cosmological_parameters--omega_b   4.836866e-02   7.306380e-04
+cosmological_parameters--n_s   9.647350e-01   4.554971e-03
+cosmological_parameters--a_s   2.110794e-09   6.107944e-11
+cosmological_parameters--tau   5.803876e-02   1.378261e-02
+horndeski_parameters--parameters_smg__2   4.723020e-01   4.959809e-01
+horndeski_parameters--parameters_smg__3   3.818397e-02   4.974137e-01
+cosmological_parameters--sigma_8   8.409399e-01   1.601972e-02
+prior   2.361427e+01   7.105427e-15
+post   -2.625036e+02   2.429024e+00

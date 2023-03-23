@@ -1,0 +1,37 @@
+#parameter upper68
+#emcee_output/hiclass_horndeski.txt
+cosmological_parameters--omega_m     0.310211
+cosmological_parameters--h0     0.684849
+cosmological_parameters--omega_b     0.0484185
+cosmological_parameters--n_s     0.96792
+cosmological_parameters--a_s     2.12021e-09
+cosmological_parameters--tau     0.0604992
+horndeski_parameters--parameters_smg__2     0.664626
+horndeski_parameters--parameters_smg__3     0.189101
+cosmological_parameters--sigma_8     0.843102
+prior     23.6143
+post     -261.56
+#emcee_output/gw170817.txt
+cosmological_parameters--omega_m     0.315133
+cosmological_parameters--h0     0.681187
+cosmological_parameters--omega_b     0.0488053
+cosmological_parameters--n_s     0.966262
+cosmological_parameters--a_s     2.15599e-09
+cosmological_parameters--tau     0.0675914
+horndeski_parameters--parameters_smg__2     0.893936
+horndeski_parameters--parameters_smg__3     0.164656
+cosmological_parameters--sigma_8     0.852622
+prior     23.6143
+post     -260.646
+#emcee_output/hiclass_dgw.txt
+cosmological_parameters--omega_m     0.314577
+cosmological_parameters--h0     0.682491
+cosmological_parameters--omega_b     0.0487451
+cosmological_parameters--n_s     0.96698
+cosmological_parameters--a_s     2.13848e-09
+cosmological_parameters--tau     0.0635395
+horndeski_parameters--parameters_smg__2     0.736799
+horndeski_parameters--parameters_smg__3     0.235434
+cosmological_parameters--sigma_8     0.850107
+prior     23.6143
+post     -261.496
