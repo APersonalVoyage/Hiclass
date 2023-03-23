@@ -1,0 +1,13 @@
+#parameter peak1d
+#./emcee_output/hiclass_dgw.txt
+cosmological_parameters--omega_m     0.314713
+cosmological_parameters--h0     0.675538
+cosmological_parameters--omega_b     0.0484493
+cosmological_parameters--n_s     0.961906
+cosmological_parameters--a_s     2.11358e-09
+cosmological_parameters--tau     0.0584529
+horndeski_parameters--parameters_smg__2     0.411597
+horndeski_parameters--parameters_smg__3     -0.103773
+cosmological_parameters--sigma_8     0.838929
+prior     nan
+post     -261.299

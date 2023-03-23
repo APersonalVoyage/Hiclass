@@ -1,0 +1,13 @@
+#parameter lerr95
+#./emcee_output/hiclass_dgw.txt
+cosmological_parameters--omega_m     0.297618
+cosmological_parameters--h0     0.664777
+cosmological_parameters--omega_b     0.047297
+cosmological_parameters--n_s     0.95428
+cosmological_parameters--a_s     2.02888e-09
+cosmological_parameters--tau     0.0400134
+horndeski_parameters--parameters_smg__2     -0.313323
+horndeski_parameters--parameters_smg__3     -0.861638
+cosmological_parameters--sigma_8     0.822369
+prior     nan
+post     -266.311
