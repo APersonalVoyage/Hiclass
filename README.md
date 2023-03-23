@@ -1,4 +1,4 @@
-# Hiclass
+
 Master's Thesis
 
 We use the following events; GW170817 and GW190521 to constrain gravity theories for this project. GW190521 is by far the farthest detected merger made by Advanced LIGO and Virgo detectors during O3. 
