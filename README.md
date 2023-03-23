@@ -15,4 +15,4 @@ Throughout the process, we pay particular attention to the two questions listed 
 In conjunction to the gravitational wave data, we even incorporate restrictions from a pair of recent cosmology large scale data sets. This serves as context for the stricter constraints they offer for the alpha_M Horndeski parameter as well as additional constraints on cosmological parameters. They are the prime source of constraints for the alpha_B Horndeski parameter which do not influence the propagation of Gravitational Waves.
 
 
-Cosmosis and hiclass libraries were used extensively for the project. For installation of these libraries you can check the Libraries folder.
+Cosmosis and hiclass libraries were used extensively for the project. For installation of these libraries you can check the 
