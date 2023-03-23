@@ -1,0 +1,65 @@
+
+
+Run cosmosis demo7. You can follow the instructions on https://bitbucket.org/joezuntz/cosmosis/wiki/demos/Demo7 and it will remind you about what we discussed today. You can skip the one line where it talks about making plots with R.
+
+In the demo7.ini file there is the [runtime] section, which specifies that you want cosmosis to use the grid sampler
+
+	[runtime]
+	sampler=grid
+
+if you change the sampler to the 'test' sampler
+
+	[runtime]
+	sampler=test
+
+then instead of finding the distance between data and theory at the set of requested grid points, cosmosis will instead just run at one grid point, and output everything it calculates into a directory for you to look at. You can specify where everything calculated gets output in a new section in demo7.ini which specifies the options for the test sampler:
+
+	[test]
+	save_dir=<some sensible directory>
+
+If you run cosmosis again using the changed ini file, then you should see the save_dir directory you specified contains a number of things. There should be three directories
+
+	cosmological_parameters
+	growth_parameters
+	likelihoods
+
+and inside the growth_parameters directory a number of txt files:
+
+	a.txt
+	d_z.txt
+	f_z.txt
+	z.txt
+
+these text files contain what was calculated by cosmosis in the 'growthfunction' module which was asked for in the [pipeline] section.
+
+	z.txt contains the redshift points where cosmosis has made a theory calculation
+
+	f_z.txt containts the calculated values of the 'growth factor' which is a measure of how fast cosmological structures are growing, calculated at the set of redshifts in z.txt
+
+You should be able to make a plot of z (on the x-axis) against f_z (on the y-axis).
+
+This shows the growth rate and how it changes as a function of redshift, in a universe with the parameters you have given to cosmosis.
+
+You gave those parameters as the central values in the values7.ini file:
+
+	[cosmological_parameters]
+	omega_m =  0.1    0.27  0.4
+	sigma_8 = 0.5 0.8 1.2
+
+So this should be a plot of z against f_z for a universe with omega_m = 0.27 and sigma_8 = 0.8.
+
+If you change these central values in the values7.ini file and re-run demo7, then you will instead calculate a prediction for f_z in a universe with whatever values of omega_m and sigma_8 you have specified.
+
+Try and make a plot which shows the z against f_z curves for a number of different universes with different values of sigma_8 and omega_m.
+
+These curves are what cosmosis compares to whatever data you ask it to -- in demo7 it is compared to the data from the 'boss' experiment to give the likelihood plots which you get from postprocess and are shown on the cosmosis wiki.
+
+I have also attached a file with a number of data points from a few different experiments. Once you have a plot of the different z against f_z curves for different universes, also plot the data points on top with their error bars.
+
+The data are not **just** the f_z theory quantity, unfortunately. They are f(z) * sigma8(z). You can easily transform the theory curves you are plotting from f_z to f(z) * sigma8(z) though.
+
+As well as z.txt and f_z.txt cosmosis should output d_z.txt into the same folder each time it runs. You can calculate f(z) * sigma8(z) in python as:
+
+	fs8_z = f_z * <sigma_8 value for each universe> * d_z / d_z[0]
+
+You will then have f(z) * sigma8(z) theory curves to plot alongside the data points.

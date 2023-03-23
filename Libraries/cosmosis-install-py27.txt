@@ -1,0 +1,86 @@
+Conda
+This will assume you have some familiarity with using the linux terminal (opening it and navigating around file folders).
+
+From a clean install of ubuntu linux, first install curl (which allows you to download things on the command line), git (software version management software) and make (software compilation tool). You wont need to do this (and indeed can't) on draco. If you want to check if you already have them on whatever machine you are using, you can try e.g. "which curl" and it will show you where curl is if it is installed.
+
+	sudo apt install curl git make
+
+Then move to the location you want to download the anaconda python software to:
+
+	cd <some sensible directory>
+
+where <some sensible directory> would be e.g. "Downloads" on your own machine, or "/home/projects/<your-username>/" on draco.
+
+Then download the anaconda python installation script:
+
+	curl -O https://repo.anaconda.com/archive/Anaconda3-2021.05-Linux-x86_64.sh
+
+Use the "chmod" command to add permissions to allow you to run the script:
+
+	chmod u+x ./Anaconda3-2021.05-Linux-x86_64.sh
+
+
+And run the script itself:
+
+	./Anaconda3-2021.05-Linux-x86_64.sh
+
+Agree to the license terms (assuming you do)
+
+On draco, you should change the installation location to be
+
+	/home/projects/<your-username>/anaconda3
+
+because this 'projects' area has much more space available than your standard home area.
+
+Wait for the installation to finish.
+
+If you are on draco, you should switch to a bash shell by typing
+
+	bash
+
+If you are on your own machine, you will just need to close and open the terminal again.
+
+You should now see a command prompt which has "(base)" at the beginning.
+This shows that you are using the "base" anaconda environment with minimal python things installed.
+
+Now download the cosmosis conda setup script (kindly provided by my colleague Nicolas Tessore) and modify the permissions:
+
+	curl -OL https://git.io/cosmosis-conda.sh
+
+	chmod u+x ./cosmosis-conda.sh
+
+Because we want to use hi_class at the same time you will need to make a small change to this script so that it compiles with python 2.7, as opposed to a 3.x version of python which would be done by default.
+
+On line 73, you should change
+
+	- python
+
+to:
+
+	- python=2.7
+
+this will make it install cosmosis using the 2.7 version of python rather than a newer version. You will also need to install some extra python packages:
+
+	conda install configparser future cython
+
+(if you wanted you could instead add those three packages to the 'dependencies' section of cosmosis-conda.sh before you run it)
+
+Then run the set up script:.
+
+	./cosmosis-conda.sh
+
+This script automatically goes through all the hard work of setting up a new anaconda environment, installing all of the extra python code necessary to compile cosmosis, then actually compiling cosmosis.
+
+Wait for the installation to finish.
+
+Follow the instructions to run the demo. First activate the conda environment:
+
+	conda activate cosmosis
+
+then move to the cosmosis directory using a special command the install script created to get you there:
+
+	cd_cosmosis
+
+and finally run cosmosis, with the demo1.ini configuration script as the input:
+
+	cosmosis demos/demo1.ini

@@ -1,0 +1,39 @@
+Once you have a version of cosmosis which uses python 2.7, you should download this repository: https://github.com/itrharrison/hi_class
+
+Which is best done by running:
+
+	git clone https://github.com/itrharrison/hi_class.git
+
+You should then make sure you have cosmosis set up:
+
+	conda activate cosmosis
+
+Then navigate to the directory which you have downloaded the repository, then:
+
+	cd hi_class_public
+
+then:
+
+	make
+
+This should compile the hi_class code as necessary.
+
+You can check if this has been successful by navigating to the hi_class/inis directory and running:
+
+	cosmosis example-hi_class.ini
+
+But before doing this you will need to make a couple of changes to example-hi_class.ini reflecting where you have installed it on your own computer.
+
+In the [hi_class] section of the ini, you need to tell it the correct location of the files. So changing line 27:
+
+	file = /Users/harrison/Dropbox/code_mcr/hi_class/hi_class_interface.py
+
+and line 28:
+	
+	sBBN_file = /Users/harrison/Dropbox/code_mcr/hi_class/hi_class_public/bbn/sBBN.dat
+
+to the actual locations of those two files on your machine. You may find it useful to navigate to the hi_class directory where you downloaded the repo and run
+
+	pwd
+
+which will show the full directory location.

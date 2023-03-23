@@ -1,0 +1,55 @@
+Create an equivalent plot to the one we made from cosmosis demo7 for how the f * sigma_8 quantity varied with redshift, but instead of changing the Omega_m and/or sigma8 values, change the alpha_m and/or alpha_b values.
+
+The alpha values are set in the smg-values.ini file you use, as
+
+	[horndeski parameters]
+	parameter_smg__2 = <alpha_b>
+	parameter_smg__3 = <alpha_m>
+
+The other parameter_smg__ values should be set at their values for GR:
+
+	parameters_smg__1 = 1.0
+	parameters_smg__4 = 0.0
+	parameters_smg__5 = 1.0
+
+You should also then make the same plot, but of d_GW as a function of redshift, and of the ratio between d_GW and d_l as a function of redshift. These values are in the output folder when you run the test sampler:
+
+	<output folder>/distances/d_l_gw.txt
+	<output folder>/distances/d_l.txt
+
+You can then add to this plot the two data points from GW170817 and S190521g. You can assume GR is correct, so they should have a value of 1 for d_GW/d_l. It is the position on the redshift axis, and the size of the error bar which is important.
+
+By comparing the different theory curves at different values of the alphas to the error bars on the data points you should be able to get a rough idea on what values of alpha are ruled out by the GW observations.
+
+For some combinations of alpha parameters you may get errors from hi_class about "Gradient instability". This happens when the proposed theory is rejected for having the "ghosts" we mentioned a while ago.
+
+---
+
+If you get this far, then the next steps will be the following, which involve calculating the likelihood on a grid of alpha points for the BOSS fsigma8 data.
+
+Rather than simply calculating the theory curves to plot against the data points, cosmosis can also calculate the Likelihood of the data for whichever theory -- the P(d|M).
+
+An example of how to ask cosmosis to calculate a likelihood is in demo7.ini. In the [pipeline] section we specify:
+
+	likelihoods = boss
+
+(because 'BOSS' is the name of the experiment) and then when the boss module is run, the theory predictions will be compared to the BOSS data (which is measurements of fsigma8).
+
+Add the boss module to your [pipeline] section and ask it to calculate the likelihood:
+
+	modules = consistency hi_class boss
+	likelihoods = boss
+
+and also add the section for the boss module:
+
+	[boss]
+	file = cosmosis-standard-library/likelihood/boss/boss_rsd.py
+	mode = 1 ; include fsigma8 constraint
+
+Also alter the cosmosis ini file and values file so that you run a grid sampler instead of the test sampler, varying a sensible range of the two alpha parameters (and not varying any other parameters, i.e. only give one value per row in the values.ini file for all other cosmological and horndeski parameters).
+
+From running the other steps above, you should have an idea of how long each individual set of values takes to run. This should help you pick a sensible amount of points to include in the grid (e.g. if it takes 1 minute to run each set of values, then a 20 x 20 grid would take 6-7 hours, so you could leave it going overnight).
+
+You could also have a look at the cosmosis documentation about using 'mpirun' (https://bitbucket.org/joezuntz/cosmosis/wiki/demos/Demo5). This will run the sampler in a parallel mode. So e.g. if you were set up to use 4 cores of your laptop then instead of taking 6-7 hours it would take 1.5 - 1.75 hours (but possibly make your laptop unusable for other things, depending on the specs).
+
+You should then be able to make a contour plot in the two alpha parameters showing the constraints implied by the BOSS data.
