@@ -1,0 +1,13 @@
+#parameter lerr68
+#./emcee_output/gw170817.txt
+cosmological_parameters--omega_m     0.305432
+cosmological_parameters--h0     0.671057
+cosmological_parameters--omega_b     0.0480341
+cosmological_parameters--n_s     0.959155
+cosmological_parameters--a_s     2.0461e-09
+cosmological_parameters--tau     0.0410211
+horndeski_parameters--parameters_smg__2     0.0830209
+horndeski_parameters--parameters_smg__3     -0.502259
+cosmological_parameters--sigma_8     0.83214
+prior     nan
+post     -262.6

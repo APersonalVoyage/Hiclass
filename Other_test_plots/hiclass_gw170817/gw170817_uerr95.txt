@@ -1,0 +1,13 @@
+#parameter uerr95
+#./emcee_output/gw170817.txt
+cosmological_parameters--omega_m     0.326974
+cosmological_parameters--h0     0.688596
+cosmological_parameters--omega_b     0.0497385
+cosmological_parameters--n_s     0.971994
+cosmological_parameters--a_s     2.2827e-09
+cosmological_parameters--tau     0.0961402
+horndeski_parameters--parameters_smg__2     1.84481
+horndeski_parameters--parameters_smg__3     1.29521
+cosmological_parameters--sigma_8     0.878682
+prior     nan
+post     -258.388

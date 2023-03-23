@@ -1,0 +1,13 @@
+#parameter mean std_dev
+#./emcee_output/gw170817.txt
+cosmological_parameters--omega_m   3.127245e-01   7.531971e-03
+cosmological_parameters--h0   6.770349e-01   5.578848e-03
+cosmological_parameters--omega_b   4.862648e-02   6.039283e-04
+cosmological_parameters--n_s   9.632891e-01   4.443922e-03
+cosmological_parameters--a_s   2.130264e-09   7.407592e-11
+cosmological_parameters--tau   6.177329e-02   1.715740e-02
+horndeski_parameters--parameters_smg__2   7.017856e-01   5.569837e-01
+horndeski_parameters--parameters_smg__3   5.208893e-03   5.642910e-01
+cosmological_parameters--sigma_8   8.477239e-01   1.516894e-02
+prior   2.361427e+01   7.105427e-15
+post   -2.611923e+02   1.984158e+00
